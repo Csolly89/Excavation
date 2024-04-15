@@ -1,20 +1,17 @@
 const navLinks = [
     {
         title: "About us",
-        path: "/about",
+        href: "#about",
     },
     {
         title: "Services",
-        path: "/services",
+        href: "#services",
     },
     {
         title: "Projects",
-        path: "/projects",
+        href: "#projects",
     },
-    {
-        title: "Contact",
-        path: "/contact",
-    },
+    
 ]
 
 export default navLinks

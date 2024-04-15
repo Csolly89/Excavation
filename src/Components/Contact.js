@@ -1,14 +1,14 @@
 function Contact() {
     return (
         <>
-            <section className="py-10 bg-gradient-to-r from-gray-800 to-black sm:py-16 lg:py-24">
+            <section className="py-10 ">
                 <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                     <div className="max-w-2xl mx-auto text-center">
                         <h2 className="text-3xl font-bold font-exo leading-tight text-white sm:text-4xl lg:text-5xl">Contact us</h2>
                         <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed font-overpass text-white">Lets get in touch to start your free estimate</p>
                     </div>
 
-                    <div className="max-w-6xl mx-auto mt-12 overflow-hidden bg-white rounded-md shadow-md lg:mt-20">
+                    <div className="max-w-6xl mx-auto mt-5 overflow-hidden bg-white rounded-md shadow-md lg:mt-8">
                         <div className="grid items-stretch grid-cols-1 lg:grid-cols-5">
                             <div className="lg:col-span-3">
                                 <div className="p-6 sm:p-10">
@@ -34,13 +34,6 @@ function Contact() {
                                                 <label htmlFor="" className="text-base font-poppins font-medium text-gray-900"> Phone number </label>
                                                 <div className="mt-2.5 relative">
                                                     <input type="tel" name="" id="" placeholder="" className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600" />
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <label htmlFor="" className="text-base font-poppins font-medium text-gray-900"> Company name </label>
-                                                <div className="mt-2.5 relative">
-                                                    <input type="text" name="" id="" placeholder="" className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600" />
                                                 </div>
                                             </div>
 
@@ -76,10 +69,16 @@ function Contact() {
                                             <div className="mt-8 space-y-7">
                                                 <div className="flex items-start">
                                                     <svg className="flex-shrink-0 text-blue-600 w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                        <path
+                                                            strokeLinecap="round"
+                                                            strokeLinejoin="round"
+                                                            strokeWidth="1.5"
+                                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                                                        />
                                                     </svg>
-                                                    <span className="block ml-3 text-base font-overpass text-gray-900"> Lacaster Sc, 29720 USA </span>
+                                                    <div className="ml-3">
+                                                        <span className="block text-base font-overpass text-gray-900"> (704) 330-3774 </span>
+                                                    </div>
                                                 </div>
 
                                                 <div className="flex items-start">
@@ -91,16 +90,10 @@ function Contact() {
 
                                                 <div className="flex items-start">
                                                     <svg className="flex-shrink-0 text-blue-600 w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                        <path
-                                                            strokeLinecap="round"
-                                                            strokeLinejoin="round"
-                                                            strokeWidth="1.5"
-                                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                                                        />
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                                     </svg>
-                                                    <div className="ml-3">
-                                                        <span className="block text-base font-overpass text-gray-900"> (704) 330-3774 </span>
-                                                    </div>
+                                                    <span className="block ml-3 text-base font-overpass text-gray-900"> Lacaster Sc, 29720 USA </span>
                                                 </div>
                                             </div>
                                         </div>
@@ -133,6 +126,7 @@ function Contact() {
                                                     focus:text-white
                                                     hover:bg-blue-600 hover:border-blue-600
                                                     focus:border-blue-600
+                                                    mr-10
                                                     ">
                                                             <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                                                                 <path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path>
