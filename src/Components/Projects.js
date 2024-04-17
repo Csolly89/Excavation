@@ -1,35 +1,21 @@
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
+import { photos } from "../Utilities/photos"
 
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-    }));
-
-function Projects() {
-    return (
-        <>
-            <Box sx={{ width: 1 }}>
-                <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gap={2}>
-                <Box gridColumn="span 8">
-                    <Item className='text-black'>Hello</Item>
-                </Box>
-                <Box gridColumn="span 4">
-                    <Item>xs=4</Item>
-                </Box>
-                <Box gridColumn="span 4">
-                    <Item>xs=4</Item>
-                </Box>
-                <Box gridColumn="span 8">
-                    <Item>xs=8</Item>
-                </Box>
-                </Box>
-            </Box>
+const Projects = () => {
+  const style = 'bg-neutral-100 border-2 rounded-xl p-2 flex flex-col items-center justify-center'
+  return (
+    <>
+          <div className='grid md:grid-cols-4 auto-rows-[300px] gap-4 my-10'> 
+            {photos.map((item,i) => (
+              <div key={i} className={`${style} 
+              ${i === 0 || i === 4 || i === 8  ? 'md:col-span-2' : ''}
+              ${i === 5 || i === 10   ? 'md:col-span-3' : ''}
+              ${i === 2 || i === 7 ? 'md:row-span-2' : ''}`}>
+                <img src={item.pic} alt={item.alt} />
+                <p>{item.disc}</p>
+              </div>
+            ))}
+          </div>
         </>
     );
 }

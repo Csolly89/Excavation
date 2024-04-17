@@ -1,7 +1,7 @@
 function Contact() {
     return (
         <>
-            <section className="py-10 ">
+            <section className="mb-12">
                 <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                     <div className="max-w-2xl mx-auto text-center">
                         <h2 className="text-3xl font-bold font-exo leading-tight text-white sm:text-4xl lg:text-5xl">Contact us</h2>

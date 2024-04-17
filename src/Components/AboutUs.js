@@ -1,5 +1,4 @@
 import * as React from 'react';
-import ListItem from '@mui/material/ListItem';
 import Divider from '@mui/material/Divider';
 
 
@@ -15,9 +14,7 @@ function About() {
                     Walter Higgins founded Higgins Excavation with a simple yet powerful mission: to provide unmatched quality and reliability in excavation services while fostering lasting relationships with our clients. With years of experience under his belt, Walter recognized the need for a company that prioritized attention to detail, reliability, and customer satisfaction above all else. Thus, Higgins Excavation was born.
                 </section>
 
-                <ListItem className="font-poppins font-semibold mt-5">
-                    <h2 className=''> Our Values</h2>
-                </ListItem>
+                    <h2 className="font-poppins font-semibold mt-5 ml-5 pb-2"> Our Values</h2>
                 <Divider variant="inset" />
                 At Higgins Excavation, our values are the cornerstone of everything we do. We pride ourselves on:
                 <section className='ml-5'>
@@ -35,9 +32,7 @@ function About() {
                     </p>
                 </section>
 
-                <ListItem className="font-poppins font-semibold mt-5">
-                    <h2>Our Services</h2>
-                </ListItem>
+                    <h2 className="font-poppins font-semibold mt-5 ml-5 pb-2">Our Services</h2>
                 <Divider variant="inset" />
                 <p>
                     Higgins Excavation offers a comprehensive range of excavation services tailored to meet the unique needs of each client. Our services include:
@@ -48,9 +43,7 @@ function About() {
                     Utility Installation: From sewer lines to water mains, we handle the installation of utility systems with skill and precision.
                 </p>
 
-                <ListItem className="font-poppins font-semibold mt-5">
-                    <h2>Why choose us?</h2>
-                </ListItem>
+                    <h2 className="font-poppins font-semibold mt-5 ml-5 pb-2">Why choose us?</h2>
                 <Divider variant="inset" />
                 <p>
                     When you choose Higgins Excavation, you're not just hiring a contractor – you're partnering with a dedicated team committed to your project's success. Here's why our clients trust us:
