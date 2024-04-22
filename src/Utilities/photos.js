@@ -13,62 +13,62 @@ import trees2 from "../assets/trees2.png"
 
 export const photos = [
     {
-        pic: {big},
+        pic: big,
         alt:"bulldozer" ,
         disc: ""
     },
     {
-        pic: {clear},
-        alt:"land clearing" ,
-        disc: ""
-    },
-    {
-        pic: {clear2},
+        pic: clear,
         alt:"different land clearing" ,
         disc: ""
     },
     {
-        pic: {driveway},
+        pic: clear2,
+        alt:"different land clearing" ,
+        disc: ""
+    },
+    {
+        pic: driveway,
         alt:"bigging of a gravel driveway" ,
         disc: ""
     },
     {
-        pic: {progress},
+        pic: progress,
         alt:"halfway mark of gravel driveway" ,
         disc: ""
     },
     {
-        pic: {drive},
+        pic: drive,
         alt:"finished driveway" ,
         disc: ""
     },
     {
-        pic: {field},
+        pic: field,
         alt:"field before clearing" ,
         disc: ""
     },
     {
-        pic: {gravel},
+        pic: gravel,
         alt:"pile of gravel for driveway" ,
         disc: ""
     },
     {
-        pic: {stump},
+        pic: stump,
         alt:"Treestump to be removed" ,
         disc: ""
     },
     {
-        pic: {tools},
+        pic: tools,
         alt:"Towing truck and bobcat machine" ,
         disc: ""
     },
     {
-        pic: {trees},
+        pic: trees,
         alt:"field of trees being torn down" ,
         disc: ""
     },
     {
-        pic: {trees2},
+        pic: trees2,
         alt:"field of trees being torn down" ,
         disc: ""
     },
