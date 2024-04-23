@@ -14,6 +14,8 @@ import IconButton from '@mui/material/IconButton';
 // state variable for open or closed navbar bar icon, when clicked switch boolen.. onclick links also reset variable to original state, true or false to close menu.
 function Navbar() {
     const [navbarOpen, setNavbarOpen] = useState(false);
+
+
     return (
         <>
             <Box className='sticky top-0 ' sx={{ flexGrow: 1 }}>
@@ -30,7 +32,7 @@ function Navbar() {
                                 {navbarOpen ? <ul className="font-poppins w-28 ml-3 pt-1 rounded fixed top-16 md:flex md:flex-row lg:w-60 gap-2 lg:top-0 lg:ml-10 lg:text-xl lg:px-5 lg:pb-5  ">
                                     {navLinks.map((link, index) => (
                                         <li key={index}>
-                                            <NavLink onClick={() => setNavbarOpen(true)} href={link.href} title={link.title} />
+                                            <NavLink  href={link.href} title={link.title} />
                                         </li>
                                     ))
                                     }

@@ -2,16 +2,16 @@ import * as React from 'react';
 import { photos } from "../Utilities/photos"
 
 const Projects = () => {
-  const style = 'bg-neutral-100 border-2 rounded-xl p-2 flex flex-col items-center justify-center'
+  const style = 'bg-gradient-to-br from-[#c79141] to-[#854426] rounded-xl p-2 flex flex-col items-center justify-center'
   return (
     <>
-          <div className='grid md:grid-cols-4 auto-rows-[300px] gap-4 my-10 object-cover'> 
+          <div className='grid md:grid-cols-4 auto-rows-[300px] gap-10 my-10 mx-24 '> 
             {photos.map((item,i) => (
               <div key={i} className={`${style} 
               ${i === 0 || i === 4 || i === 8  ? 'md:col-span-2' : ''}
               ${i === 5 || i === 10   ? 'md:col-span-3' : ''}
               ${i === 2 || i === 7 ? 'md:row-span-2' : ''}`}>
-                <img src={item.pic} alt={item.alt} />
+                <img className='h-full w-full object-cover' src={item.pic} alt={item.alt} />
                 <p>{item.disc}</p>
               </div>
             ))}
