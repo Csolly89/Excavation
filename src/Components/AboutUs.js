@@ -5,16 +5,18 @@ import Divider from '@mui/material/Divider';
 function About() {
     return (
         <> 
-        <div className='text-white '>
+        <div className='text-white leading-7'>
 
             <article className="font-overpass mx-4 py-3 ">
+                <h1 className='font-exo font-semibold text-3xl text-center -mt-10 mb-5'>About us</h1>
+                <Divider variant="center" />
                 <section className='text-center mx-auto'>
                     At Higgins Excavation, we believe in the power of precision, dedication, and personalized service. Founded and operated by Walter Higgins, we are a single-manned company with a big vision and an even bigger commitment to excellence in excavation services.
                     Our Story
                     Walter Higgins founded Higgins Excavation with a simple yet powerful mission: to provide unmatched quality and reliability in excavation services while fostering lasting relationships with our clients. With years of experience under his belt, Walter recognized the need for a company that prioritized attention to detail, reliability, and customer satisfaction above all else. Thus, Higgins Excavation was born.
                 </section>
 
-                    <h2 className="font-poppins font-semibold mt-5 ml-5 pb-2"> Our Values</h2>
+                    <h2 className="font-poppins font-semibold mt-5 ml-5 pb-2 "> Our Values</h2>
                 <Divider variant="inset" />
                 At Higgins Excavation, our values are the cornerstone of everything we do. We pride ourselves on:
                 <section className='ml-5'>

@@ -9,7 +9,8 @@ module.exports = {
       'overpass': ["Overpass", 'sans-serif'],
       'poppins': ["Poppins", 'sans-serif']
     },
-    extend: {},
+    extend: {
+    },
   },
   plugins: [],
 }

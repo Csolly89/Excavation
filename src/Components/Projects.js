@@ -2,7 +2,7 @@ import * as React from 'react';
 import { photos } from "../Utilities/photos"
 
 const Projects = () => {
-  const style = 'bg-gradient-to-br from-[#c79141] to-[#854426] rounded-xl p-2 flex flex-col items-center justify-center'
+  const style = 'bg-[#c79141] rounded-xl p-2 flex flex-col items-center justify-center'
   return (
     <>
           <div className='grid md:grid-cols-4 auto-rows-[300px] gap-10 my-10 mx-24 '> 

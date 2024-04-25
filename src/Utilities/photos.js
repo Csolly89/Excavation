@@ -1,5 +1,4 @@
 import big from "../assets/bobcat.png"
-import clear from "../assets/clearing.png"
 import clear2 from "../assets/clearing2.png"
 import drive from "../assets/driveway.png"
 import driveway from "../assets/driveway2.png"
@@ -18,8 +17,8 @@ export const photos = [
         disc: ""
     },
     {
-        pic: clear,
-        alt:"different land clearing" ,
+        pic: field,
+        alt:"field before clearing" ,
         disc: ""
     },
     {
@@ -40,11 +39,6 @@ export const photos = [
     {
         pic: drive,
         alt:"finished driveway" ,
-        disc: ""
-    },
-    {
-        pic: field,
-        alt:"field before clearing" ,
         disc: ""
     },
     {

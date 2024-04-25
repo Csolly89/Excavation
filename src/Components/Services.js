@@ -4,10 +4,10 @@ import Divider from '@mui/material/Divider';
 function Services() {
     return (
         <>
-            <div className='text-white bg-gradient-to-br from-[#c76b41] to-[#854426] rounded-xl p-3 px-4 shadow-lg lg:mx-24'>
+            <div className='text-white bg-gradient-to-br from-[#c76b41] to-[#854426] rounded-xl p-5 mx-5 md:p-16 shadow-lg md:mx-24 '>
 
-                <article className="3 font-overpass mx-4 py-">
-                    <section className='text-center mx-auto lg:text-4xl font-exo'>
+                <article className="3 font-overpass mx-4 ">
+                    <section className='text-center mx-auto text- lg:text-4xl font-exo text-3xl'>
                         <h2>
                             Available Services
                         </h2>

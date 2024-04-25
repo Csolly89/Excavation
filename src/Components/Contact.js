@@ -14,7 +14,7 @@ function Contact() {
                                 <div className="p-6 sm:p-10">
                                     <h3 className="text-2xl font-poppins font-semibold text-black">Send us a message</h3>
 
-                                    <form action="#" method="POST" className="mt-8">
+                                    <form action="#" className="mt-8">
                                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-4">
                                             <div>
                                                 <label htmlFor="" className="text-base font-poppins font-medium text-gray-900"> Your name </label>
@@ -51,7 +51,7 @@ function Contact() {
                                             </div>
 
                                             <div className="sm:col-span-2">
-                                                <button type="submit" className="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-poppins  text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md focus:outline-none hover:bg-blue-700 focus:bg-blue-700">
+                                                <button  className="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-poppins  text-white bg-blue-600 border border-transparent rounded-md focus:outline-none hover:bg-blue-700 focus:bg-blue-700">
                                                     Send
                                                 </button>
                                             </div>
