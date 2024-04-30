@@ -9,10 +9,10 @@ function Contact() {
     // env variable for keys here
         emailjs
             .sendForm(
-                'service_dvcg5mm',
-                'template_8pf3d2i', 
+                `${process.env.userId}`,
+                `${process.env.template}`, 
                 form.current, {
-                    publicKey: 'z1swmFaWwSMU_3PCx',
+                    publicKey: `${process.env.key}`,
             })
             .then(
             () => {
