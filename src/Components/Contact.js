@@ -1,8 +1,34 @@
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 function Contact() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    // env variable for keys here
+        emailjs
+            .sendForm(
+                'service_dvcg5mm',
+                'template_8pf3d2i', 
+                form.current, {
+                    publicKey: 'z1swmFaWwSMU_3PCx',
+            })
+            .then(
+            () => {
+                console.log('SUCCESS!');
+                // e.target.reset();
+            },
+            (error) => {
+                console.log('FAILED...', error.text);
+            },
+        );
+    };
+
     return (
         <>
-            <section className="mb-12">
-                <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+            <div className="mb-12">
+                <div  className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                     <div className="max-w-2xl mx-auto text-center">
                         <h2 className="text-3xl font-bold font-exo leading-tight text-white sm:text-4xl lg:text-5xl">Contact us</h2>
                         <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed font-overpass text-white">Lets get in touch to start your free estimate</p>
@@ -10,40 +36,38 @@ function Contact() {
 
                     <div className="max-w-6xl mx-auto mt-5 overflow-hidden bg-white rounded-md shadow-md lg:mt-8">
                         <div className="grid items-stretch grid-cols-1 lg:grid-cols-5">
-                            <div className="lg:col-span-3">
+                            <form ref={form} onSubmit={sendEmail} className="lg:col-span-3">
                                 <div className="p-6 sm:p-10">
                                     <h3 className="text-2xl font-poppins font-semibold text-black">Send us a message</h3>
-
-                                    <form action="#" className="mt-8">
+                                    {/* action="#" */}
+                                    <div  className="mt-8">
                                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-4">
                                             <div>
-                                                <label htmlFor="" className="text-base font-poppins font-medium text-gray-900"> Your name </label>
+                                                <label className="text-base font-poppins font-medium text-gray-900"> Your name </label>
                                                 <div className="mt-2.5 relative">
-                                                    <input type="text" name="" id="" placeholder="" className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600" />
+                                                    <input type="text"  name="user_name"  className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600" />
                                                 </div>
                                             </div>
 
                                             <div>
-                                                <label htmlFor="" className="text-base font-poppins font-medium text-gray-900"> Your email </label>
+                                                <label className="text-base font-poppins font-medium text-gray-900"> Your email </label>
                                                 <div className="mt-2.5 relative">
-                                                    <input type="email" name="" id="" placeholder="" className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600" />
+                                                    <input type="email" name="user_email" className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600" />
                                                 </div>
                                             </div>
 
                                             <div>
-                                                <label htmlFor="" className="text-base font-poppins font-medium text-gray-900"> Phone number </label>
+                                                <label className="text-base font-poppins font-medium text-gray-900"> Phone number </label>
                                                 <div className="mt-2.5 relative">
-                                                    <input type="tel" name="" id="" placeholder="" className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600" />
+                                                    <input type="text" name="user_phone" className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600" />
                                                 </div>
                                             </div>
 
                                             <div className="sm:col-span-2">
-                                                <label htmlFor="" className="text-base font-poppins font-medium text-gray-900"> Message </label>
+                                                <label className="text-base font-poppins font-medium text-gray-900"> Message </label>
                                                 <div className="mt-2.5 relative">
                                                     <textarea
-                                                        name=""
-                                                        id=""
-                                                        placeholder=""
+                                                        name="message"
                                                         className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md resize-y bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
                                                         rows="4"
                                                     ></textarea>
@@ -51,15 +75,12 @@ function Contact() {
                                             </div>
 
                                             <div className="sm:col-span-2">
-                                                <button  className="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-poppins  text-white bg-blue-600 border border-transparent rounded-md focus:outline-none hover:bg-blue-700 focus:bg-blue-700">
-                                                    Send
-                                                </button>
+                                                <input type="submit" value="Send" className="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-poppins  text-white bg-blue-600 border border-transparent rounded-md focus:outline-none hover:bg-blue-700 focus:bg-blue-700"/>
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
                                 </div>
-                            </div>
-                            {/* 2nd card with Contact info */}
+                            </form>
                             <div className="bg-gray-100 lg:col-span-2">
                                 <div className="h-full p-6 sm:p-10">
                                     <div className="flex flex-col justify-between h-full">
@@ -85,7 +106,7 @@ function Contact() {
                                                     <svg className="flex-shrink-0 text-blue-600 w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                                     </svg>
-                                                    <span className="block ml-3 text-base font-overpass text-gray-900"> WeHiggins@yahoo.com</span>
+                                                    <span className="block ml-3 text-base font-overpass text-gray-900"> WeHiggins96@yahoo.com</span>
                                                 </div>
 
                                                 <div className="flex items-start">
@@ -103,7 +124,7 @@ function Contact() {
                                             <div className="flex items-center justify-between mt-7">
                                                 <p className="text-lg font-semibold font-overpass text-black">Follow us on</p>
                                                 
-                                                {/* Instagram link */}
+                                                
                                                 <ul className="flex items-center justify-end space-x-3">
                                                     <li>
                                                         <a
@@ -146,7 +167,7 @@ function Contact() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </>
     );
 }

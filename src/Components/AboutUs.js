@@ -23,11 +23,12 @@ function About() {
                     <p>
                         <b>Quality:</b> We hold ourselves to the highest standards of quality in every project we undertake. From the initial consultation to the final touches, we ensure that our work meets and exceeds your expectations.
                     </p>
+                    {/* 2 reliabilities..fix */}
                     <p>
                         <b>Reliability: </b>When you choose Higgins Excavation, you can trust that we will be there for you every step of the way. We understand the importance of deadlines and budgets, and we are committed to delivering results on time and within budget, every time.
                     </p>
                     <p>
-                        <b>Reliability: </b>  Honesty and transparency are at the heart of our business. We believe in building trust with our clients through open communication, integrity, and fairness in all our dealings.
+                        <b>Integrity: </b>  Honesty and transparency are at the heart of our business. We believe in building trust with our clients through open communication, integrity, and fairness in all our dealings.
                     </p>
                     <p>
                         <b>Safety: </b> Safety: The safety of our team, clients, and the community is our top priority. We adhere to the highest safety standards and take every precaution to ensure a safe working environment on every project.

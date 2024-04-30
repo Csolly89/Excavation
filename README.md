@@ -6,7 +6,7 @@ Driveway grading
 Brush or debris hauling
 Erosion control
 
-Email: WeHiggins@yahoo.com
+Email: WeHiggins996@gmail.com
 Loction Lancaster Sc, 29720
 Phone: 704-330-3774
 Instagram : https://www.instagram.com/higginsexcavationsllc/
