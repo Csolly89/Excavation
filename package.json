@@ -1,5 +1,5 @@
 {
-  "name": "diggin",
+  "name": "higgins-excavation",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -44,5 +44,8 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
