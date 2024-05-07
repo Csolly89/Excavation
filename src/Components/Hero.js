@@ -5,12 +5,14 @@ import bulldozer from "../assets/Bulldozer.png"
 function Hero() {
     return (
         <>
-        <div className="overflow-hidden h-full" >
+        <div className="overflow-hidden h-full -mt-10" >
             {/* tablet+ view */}
-            <div className="hidden md:flex  ">
-                <h1 className="xl:text-8xl font-exo font-semibold  "> Higgins Excavation LLC</h1>
-                <h2 className="xl:text-4xl font-overpass ">If it needs diggin, call Walter Higgins</h2>
-                <img src={background} alt="backwoods cabin and roadway" className='shadow-2xl w-full h-full md:object-contain px-12 '/>
+            <div className="hidden md:inline ">
+                <div className="relative z-10 md:top-[29vh] md:left-[8vw] lg:left-[25vw] lg:top-[42vh]">
+                    <h1 className="lg:text-6xl md:text-4xl md:font-semibold font-exo"> Higgins Excavation LLC</h1>
+                    <h2 className="lg:text-2xl font-overpass md:ml-44 lg:ml-56">If it needs diggin, call Walter Higgins</h2>
+                </div>
+                <img src={background} alt="backwoods cabin and roadway" className='shadow-2xl shadow-black relative rounded-2xl  lg:ml-[20vw]'/>
             </div>
             {/* mobile view */}
             <div className="block md:hidden text-center pt-8">
