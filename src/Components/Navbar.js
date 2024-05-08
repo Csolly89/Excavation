@@ -52,11 +52,11 @@ function Navbar() {
                             <a href="/" className="hidden md:block w-[85%] text-center font-exo md:text-3xl lg:text-4xl xl:text-5xl justify-center " >
                                 Higgins Excavation
                             </a>
-                            <a href="/" className="font-exo flex text-4xl md:hidden justify-center" >
+                            <a href="/" className="font-exo flex text-2xl md:hidden justify-center" >
                                 H. Excavation
                             </a>
                         </Typography>
-                        <Button href="#contact" color="inherit" ><h1 className="lg:text-2xl md:text-xl text-lg italic font-poppins font-light">Contact us</h1></Button>
+                        <Button href="#contact" onClick={() => closeNav()}  color="inherit" ><h1 className="lg:text-2xl md:text-xl text-md italic font-poppins font-light">Contact us</h1></Button>
                     </Toolbar>
                 </AppBar>
                 {navbarOpen ? <ul className="flex flex-col py-48 h-full bg-slate-600 text-4xl gap-8 font-poppins mix-blend-overlay fixed w-full rounded-lg items-center">
