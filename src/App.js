@@ -16,6 +16,7 @@ function App() {
           <section id="projects" className="pt-24"> <Projects /> </section>
           <section id="contact" className="py-12 pt-20 "> <Contact /> </section>
         </div>
+        <footer>Created by Code Nurturers LLC</footer>
       </div>
   );
 }
