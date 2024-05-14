@@ -12,7 +12,7 @@ function App() {
         <div>
           <section id="#" className="py-24"> <Hero /> </section>
           <section id="about" className="pt-32" > <About /> </section>
-          <section className="pt-24" id="services"> <Services /> </section>
+          <section id="services" className="pt-24" > <Services /> </section>
           <section id="projects" className="pt-24"> <Projects /> </section>
           <section id="contact" className="py-12 pt-20 "> <Contact /> </section>
         </div>
